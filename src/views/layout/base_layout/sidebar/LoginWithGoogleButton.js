@@ -6,7 +6,7 @@ import { FaGoogle } from "react-icons/fa6";
 
 //slices
 import { setAccessToken } from "../../../../store/sessionSlice";
-import { setName } from "../../../../store/userSlice";
+import { setList } from "../../../../store/contactSlice";
 
 import { useSelector, useDispatch } from 'react-redux';
 
@@ -36,7 +36,7 @@ const LoginWithGoogleButton = props =>{
                     },
                 }
             ).then(data=>{
-                console.log(data);
+                dispach(setList(data.data.connections))
             })
 
             //pegando os dados do usuário
@@ -48,7 +48,7 @@ const LoginWithGoogleButton = props =>{
                     }
                 }
             ).then(data=>{
-                console.log(data);
+
             })
         }
          

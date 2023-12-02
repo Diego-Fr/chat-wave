@@ -46,6 +46,7 @@ $background-color: #3b3b3b;
     align-items: center;
     gap: 10px;
     font-size: larger;
+    text-transform: capitalize;
     // justify-content: center;
     &:hover{
         background-color: lighten($background-color, 10%);

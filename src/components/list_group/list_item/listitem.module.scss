@@ -1,0 +1,29 @@
+@import '../../../colors.scss';
+
+.listItemContainer{
+    // background-color: red;
+    border-radius: 4px;
+    padding: 0px 30px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    // border:1px solid #b1b1b1;
+    justify-content: space-between;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    cursor: pointer;
+    background-color: $dark-color;
+    color: white;
+
+    &.selected{
+        background-color: $info-color;
+        color: white;
+        &:hover{
+            background-color: darken($info-color, 10%);
+        }
+    }
+
+    &:hover{
+        // background-color: $primary-color;
+        background-color: darken($dark-color, 10%);
+    }
+}
