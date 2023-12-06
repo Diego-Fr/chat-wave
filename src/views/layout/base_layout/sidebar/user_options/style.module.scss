@@ -1,0 +1,39 @@
+@import '../../../../../colors.scss';
+
+.userOptionsContainer{
+    margin-top: auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.buttonContainer{
+    text-transform: uppercase;
+    font-weight: 600;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.2s all;
+    border-radius: 3px;
+    width: 100%;
+    &:hover{
+        background-color: lighten($dark-color, 5%)
+    }
+}
+
+.buttonLogout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.avatarImage{
+    max-width: 50px;
+    border-radius: 100%;
+}

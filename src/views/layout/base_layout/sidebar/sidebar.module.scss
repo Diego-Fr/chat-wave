@@ -1,16 +1,15 @@
 
 
-$background-color: #3b3b3b;
+@import '../../../../colors.scss';
 
 .sidebarContainer{
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: $background-color;
+    background-color: $dark-color;
     padding: 10px;
     border: none;
     position: relative;
-    cursor: pointer;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-radius: 0px 10px 10px 0px;
     width: 220px;
@@ -49,7 +48,7 @@ $background-color: #3b3b3b;
     text-transform: capitalize;
     // justify-content: center;
     &:hover{
-        background-color: lighten($background-color, 10%);
+        background-color: lighten($dark-color, 10%);
     }
     
 }
